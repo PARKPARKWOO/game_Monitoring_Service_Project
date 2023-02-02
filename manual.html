@@ -17,10 +17,18 @@
             border-bottom:1px solid black;
             padding: 20px;
         }
-        ol{
+        ul{
             border-right: 1px solid black;
             width: 150px;
             margin-right: 0px;
+            padding: 0;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #article{
+            padding: 30px;
         }
 
     </style>
@@ -28,13 +36,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>game_monitoring</title>
+    
 </head>
 <body>
     <strong><h1> GMS </h1></strong> 
     <h2> category </h2>
-<ul>
-    <li><h4><a href="gm_Homepage.html"> 홈페이지 </a></h4></li>
-    <li><h4><a href="manual.html" style="text-decoration:underline" id="active"> 사용법 </a></h4></li>
-</ul>
+<div id="grid">
+    <ul>
+        <li><h4><a href="index.html"> 홈페이지 </a></h4></li>
+        <li><h4><a href="manual.html" style="text-decoration:underline" id="active"> 사용법 </a></h4></li>
+        <li><h4><a href="gms_use.html"> gms 사용하기 </a></h4></li>
+
+    </ul>
+    <div id="article">
+        1. LINE 토큰 방법을 모른다면 <a href="creat_token.html" style="color: green;"> LINE 토큰 발급방법 </a> 을 참고
+        <p>
+        2. 
+        </p>
+     
+    </div>
+</div>
 </body>
 </html>
